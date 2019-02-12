@@ -1,7 +1,7 @@
 
 
 #include "../test/lib/gtest-1.7.0/include/gtest/gtest.h"
-#include "../src/calculs.h"
+#include "../../src/calculs.h"
 #include <vector>
 #include <float.h>
 
@@ -39,13 +39,13 @@ TEST(variance_tests, validnumber) {
     dummyData.push_back(-DBL_MAX);
     
     EXPECT_EQ(0, calculVariance(dummyData,-DBL_MAX,3));
-    dummyData.clear()
+    dummyData.clear();
   
     dummyData.push_back(DBL_MAX);
     dummyData.push_back(DBL_MAX);
     dummyData.push_back(DBL_MAX);
     EXPECT_EQ(0, calculVariance(dummyData,DBL_MAX,3));
-    dummyData.clear()
+    dummyData.clear();
 }
 
 
@@ -54,6 +54,7 @@ TEST(variance_tests, invalidnumber) {
     vector<double> dummyData;
     dummyData.push_back(-DBL_MAX - 10);
     EXPECT_EQ(-1, calculVariance(dummyData,-DBL_MAX - 10,1));
+    dummyData.clear();
 }
 
 TEST(ecartType_tests, validnumber) {
