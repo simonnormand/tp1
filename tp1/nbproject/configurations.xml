@@ -15,6 +15,7 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
+      <itemPath>.travis.yml</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="src" displayName="src" projectFiles="true">
@@ -204,6 +205,8 @@
       </toolsSet>
       <compileType>
       </compileType>
+      <item path=".travis.yml" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="data/data.csv" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">
@@ -708,6 +711,8 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
+      <item path=".travis.yml" ex="false" tool="3" flavor2="0">
+      </item>
       <item path="data/data.csv" ex="false" tool="3" flavor2="0">
       </item>
       <item path="main.cpp" ex="false" tool="1" flavor2="0">

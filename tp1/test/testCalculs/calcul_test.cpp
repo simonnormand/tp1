@@ -1,5 +1,4 @@
 
-
 #include "../test/lib/gtest-1.7.0/include/gtest/gtest.h"
 #include "../../src/calculs.h"
 #include <vector>

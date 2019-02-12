@@ -1,7 +1,0 @@
-
-﻿# Text files that are supposed to be normalized to LF
-*.cpp text
-*.h text
-*.txt text
-
-* text=auto
