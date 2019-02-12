@@ -22,4 +22,5 @@ install:
 script:
   - mkdir build
   - cd build
+  - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
   - ./tp1/test/testCalculs/runTests
