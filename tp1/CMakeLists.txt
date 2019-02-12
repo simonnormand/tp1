@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 ## Project's Name
-project(hw0_Prime_number)
+project(tp1)
 
 
 ## Check for Windows ##
