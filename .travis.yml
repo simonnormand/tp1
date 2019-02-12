@@ -22,4 +22,4 @@ install:
 script:
   - mkdir build
   - cd build
-  - ./test/testCalcul/calcul_test.cpp
+  - ./test/testCalculs/calcul_test.cpp
