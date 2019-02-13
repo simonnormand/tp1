@@ -23,4 +23,4 @@ add_subdirectory(tp1/test)
 
 add_executable(main_executable ${SOURCE_FILES})
 
-target_link_libraries(main_executable tp1/primes_library)
+target_link_libraries(main_executable primes_library)
