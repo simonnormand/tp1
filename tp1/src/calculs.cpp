@@ -34,9 +34,5 @@ double calculVariance(vector<double> data, double moyenne, double nbData) {
 }
 
 double calculEcartType(double variance) {
-    if(variance < 0){
 	return sqrt(variance);
-    }else{
-        return -1;
-    }
 }
