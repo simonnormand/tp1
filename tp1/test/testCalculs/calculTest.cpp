@@ -22,7 +22,7 @@ TEST(moyenne_tests, validnumber) {
 TEST(moyenne_tests, invalidnumber) {
     
     vector<double> dummyData;
-    dummyData.push_back(-DBL_MAX - DBL_MAX);
+    dummyData.push_back(DBL_MAX + DBL_MAX);
     EXPECT_TRUE(isnan(calculMoyenne(dummyData,1)));
     dummyData.clear();
 }
