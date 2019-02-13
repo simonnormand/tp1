@@ -21,6 +21,6 @@ include_directories(tp1/src)
 add_subdirectory(tp1/src)
 add_subdirectory(tp1/test)
 
-add_executable(main_executable ${SOURCE_FILES}/tp1)
+add_executable(main_executable ${SOURCE_FILES})
 
 target_link_libraries(main_executable tp1/primes_library)
