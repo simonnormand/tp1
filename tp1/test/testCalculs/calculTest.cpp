@@ -23,7 +23,7 @@ TEST(moyenne_tests, invalidnumber) {
     
     vector<double> dummyData;
     dummyData.push_back(DBL_MAX);
-    EXPECT_EQ(DBL_MAX/2, calculMoyenne(dummyData,2)));
+    EXPECT_EQ(DBL_MAX/2, calculMoyenne(dummyData,2));
     dummyData.clear();
 }
 
