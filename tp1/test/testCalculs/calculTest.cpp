@@ -23,7 +23,7 @@ TEST(moyenne_tests, invalidnumber) {
     
     vector<double> dummyData;
     dummyData.push_back(-DBL_MAX - DBL_MAX);
-    EXPECT_EQ(-nan, calculMoyenne(dummyData,1));
+    EXPECT_TRUE(isnan(calculMoyenne(dummyData,1)));
     dummyData.clear();
 }
 
@@ -49,7 +49,7 @@ TEST(variance_tests, invalidnumber) {
     
     vector<double> dummyData;
     dummyData.push_back(-DBL_MAX - 10);
-    EXPECT_EQ(-nan, calculVariance(dummyData,-DBL_MAX - 10,1));
+    EXPECT_TRUE(isnan(calculVariance(dummyData,-DBL_MAX - 10,1)));
     dummyData.clear();
 }
 
@@ -63,5 +63,5 @@ TEST(ecartType_tests, validnumber) {
 
 TEST(ecartType_tests, invalidnumber) {
     
-    EXPECT_EQ(nan, calculEcartType("A"));
+    EXPECT_TRUE(isnan(calculEcartType("A")));
 }
