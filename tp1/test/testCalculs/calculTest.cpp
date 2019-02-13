@@ -63,5 +63,5 @@ TEST(ecartType_tests, validnumber) {
 
 TEST(ecartType_tests, invalidnumber) {
     
-    EXPECT_TRUE(isnan(calculEcartType("A")));
+    EXPECT_TRUE(isnan(calculEcartType(-1)));
 }
