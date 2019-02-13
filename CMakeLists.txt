@@ -14,13 +14,13 @@ else ()
 endif ()
 
 
-set(SOURCE_FILES main.cpp )
+set(SOURCE_FILES tp1/main.cpp )
 
-include_directories(src)
+include_directories(tp1/src)
 
-add_subdirectory(src)
-add_subdirectory(test)
+add_subdirectory(tp1/src)
+add_subdirectory(tp1/test)
 
-add_executable(main_executable ${SOURCE_FILES})
+add_executable(main_executable ${SOURCE_FILES}/tp1)
 
-target_link_libraries(main_executable primes_library)
+target_link_libraries(main_executable tp1/primes_library)
