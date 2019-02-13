@@ -65,7 +65,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/test/lib/gtest-1.7.0/src/gtest_main.o \
 	${OBJECTDIR}/test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o \
 	${OBJECTDIR}/test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.o \
-	${OBJECTDIR}/test/testCalculs/calculTest.o
+	${OBJECTDIR}/test/testEcartType/testEcartType.o \
+	${OBJECTDIR}/test/testMoyenne/testMoyenne.o \
+	${OBJECTDIR}/test/testVariance/testVariance.o
 
 
 # C Compiler Flags
@@ -242,10 +244,20 @@ ${OBJECTDIR}/test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.o: t
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.o test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.cc
 
-${OBJECTDIR}/test/testCalculs/calculTest.o: test/testCalculs/calculTest.cpp 
-	${MKDIR} -p ${OBJECTDIR}/test/testCalculs
+${OBJECTDIR}/test/testEcartType/testEcartType.o: test/testEcartType/testEcartType.cpp 
+	${MKDIR} -p ${OBJECTDIR}/test/testEcartType
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/test/testCalculs/calculTest.o test/testCalculs/calculTest.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/test/testEcartType/testEcartType.o test/testEcartType/testEcartType.cpp
+
+${OBJECTDIR}/test/testMoyenne/testMoyenne.o: test/testMoyenne/testMoyenne.cpp 
+	${MKDIR} -p ${OBJECTDIR}/test/testMoyenne
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/test/testMoyenne/testMoyenne.o test/testMoyenne/testMoyenne.cpp
+
+${OBJECTDIR}/test/testVariance/testVariance.o: test/testVariance/testVariance.cpp 
+	${MKDIR} -p ${OBJECTDIR}/test/testVariance
+	${RM} "$@.d"
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/test/testVariance/testVariance.o test/testVariance/testVariance.cpp
 
 # Subprojects
 .build-subprojects:
