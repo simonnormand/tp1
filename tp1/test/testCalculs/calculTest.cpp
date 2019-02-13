@@ -9,16 +9,12 @@ TEST(moyenne_tests, validnumber) {
     
     vector<double> dummyData;
     dummyData.push_back(-DBL_MAX);
-    dummyData.push_back(-DBL_MAX);
-    dummyData.push_back(-DBL_MAX);
     
-    EXPECT_EQ(-DBL_MAX, calculMoyenne(dummyData,3));
+    EXPECT_EQ(-DBL_MAX, calculMoyenne(dummyData,1));
     dummyData.clear();
   
     dummyData.push_back(DBL_MAX);
-    dummyData.push_back(DBL_MAX);
-    dummyData.push_back(DBL_MAX);
-    EXPECT_EQ(DBL_MAX, calculMoyenne(dummyData,3));
+    EXPECT_EQ(DBL_MAX, calculMoyenne(dummyData,1));
     dummyData.clear();
 }
 
