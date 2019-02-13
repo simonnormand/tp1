@@ -3,6 +3,7 @@
 #include "../../src/calculs.h"
 #include <vector>
 #include <float.h>
+#include <math.h>
 
 TEST(moyenne_tests, validnumber) {
     
