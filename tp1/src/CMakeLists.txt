@@ -1,6 +1,5 @@
 project(primes_library)
 
-
 set(HEADER_FILES calculs.h)
 
 set(SOURCE_FILES calculs.cpp)
