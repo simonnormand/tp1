@@ -23,4 +23,6 @@ script:
   - mkdir build
   - cd build
   - cmake -DCMAKE_CXX_COMPILER=$COMPILER .. && make
-  - ./tp1/test/testCalculs/runTests
+  - ./tp1/test/testMoyenne/runTests
+  - ./tp1/test/testVariance/runTests2
+  - ./tp1/test/testEcartType/runTests3
