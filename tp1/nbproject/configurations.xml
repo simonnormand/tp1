@@ -174,7 +174,7 @@
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="testCalculs" displayName="testCalculs" projectFiles="true">
-        <itemPath>test/testCalculs/calcul_test.cpp</itemPath>
+        <itemPath>test/testCalculs/calculTest.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -688,7 +688,7 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="test/testCalculs/calcul_test.cpp" ex="false" tool="1" flavor2="0">
+      <item path="test/testCalculs/calculTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -1194,7 +1194,7 @@
             tool="3"
             flavor2="0">
       </item>
-      <item path="test/testCalculs/calcul_test.cpp" ex="false" tool="1" flavor2="0">
+      <item path="test/testCalculs/calculTest.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

@@ -65,7 +65,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/test/lib/gtest-1.7.0/src/gtest_main.o \
 	${OBJECTDIR}/test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget.o \
 	${OBJECTDIR}/test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.o \
-	${OBJECTDIR}/test/testCalculs/calcul_test.o
+	${OBJECTDIR}/test/testCalculs/calculTest.o
 
 
 # C Compiler Flags
@@ -242,10 +242,10 @@ ${OBJECTDIR}/test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.o: t
 	${RM} "$@.d"
 	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.o test/lib/gtest-1.7.0/xcode/Samples/FrameworkSample/widget_test.cc
 
-${OBJECTDIR}/test/testCalculs/calcul_test.o: test/testCalculs/calcul_test.cpp 
+${OBJECTDIR}/test/testCalculs/calculTest.o: test/testCalculs/calculTest.cpp 
 	${MKDIR} -p ${OBJECTDIR}/test/testCalculs
 	${RM} "$@.d"
-	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/test/testCalculs/calcul_test.o test/testCalculs/calcul_test.cpp
+	$(COMPILE.cc) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/test/testCalculs/calculTest.o test/testCalculs/calculTest.cpp
 
 # Subprojects
 .build-subprojects:
