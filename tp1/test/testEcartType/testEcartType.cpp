@@ -9,7 +9,7 @@ TEST(ecartType_tests, validnumber) {
     
     EXPECT_EQ(sqrt(0), calculEcartType(0));
   
-    EXPECT_EQ(DBL_MAX, calculEcartType(DBL_MAX));
+    EXPECT_EQ(sqrt(DBL_MAX), calculEcartType(DBL_MAX));
 }
 
 
