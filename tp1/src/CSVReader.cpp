@@ -2,6 +2,8 @@
 #include "CSVReader.h"
 #include <iostream>
 #include <fstream>
+#include <sstream>
+#include <string>
 
 vector<double> readCSV(string path) {
 	vector<double> data;
@@ -11,10 +13,12 @@ vector<double> readCSV(string path) {
 	file.open(path);
 
 	string line;
-	int nbDonne = 0;
 
 	while (getline(file, line, '\r')) {
-		data.push_back(stod(line));
+            stringstream ss(line);
+            while(getline(ss, line, ';')){
+                data.push_back(stod(line));
+            }
 	}
 
 	return data;
