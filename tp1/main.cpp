@@ -1,19 +1,56 @@
-/* 
- * File:   main.cpp
- * Author: Simon
- *
- * Created on 12 février 2019, 16:14
- */
+#include "src/pch.h"
+#include <iostream>
+#include <string>
+#include "src/calculs.h"
+#include <vector>
+#include "src/CSVReader.h"
 
-#include <cstdlib>
+int main()
+{
+	double moyenne = 0;
+	double variance = 0;
+	double ecartType = 0;
+        double correlation = 0;
 
-using namespace std;
+	string path = "data/data.csv";
+	vector<double> fullData = readCSV(path);
 
-/*
- * 
- */
-int main(int argc, char** argv) {
+	double nbData = fullData[0];
+	vector<double> data;
+        vector<double> data2;
+	for (int i = 1; i <= nbData*2; i++) {
+            if(i % 2 == 1){
+		data.push_back(fullData[i]);
+            }else{
+                data2.push_back(fullData[i]);
+            }
+	}
 
-    return 0;
+	string temp = "Donnée : { ";
+
+	for (int i = 0; i < 10; i++) {
+		temp = temp + to_string(data[i]) + ", ";
+	}
+
+	temp = temp + "}\n";
+
+	cout << temp;
+
+	moyenne = calculMoyenne(data, nbData);
+
+	cout << "Moyenne : " << moyenne << "\n";
+
+	variance = calculVariance(data, moyenne, nbData);
+
+	cout << "Variance : " << variance << "\n";
+
+	ecartType = calculEcartType(variance);
+
+	cout << "Écart type : " << ecartType << "\n";
+        
+        correlation = calculCorrelation(data, data2, nbData);
+
+	cout << "Corrélation : " << correlation << "\n";
+
+	return 0;
 }
-
