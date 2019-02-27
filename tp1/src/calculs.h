@@ -2,7 +2,7 @@
 #ifndef calculs_H
 #define calculs_H
 
-// TODO: Ajoutez les en-têtes à précompiler ici
+// TODO: Ajoutez les en-tï¿½tes ï¿½ prï¿½compiler ici
 
 using namespace std;
 
@@ -11,5 +11,6 @@ using namespace std;
 double calculMoyenne(vector<double> data, double nbData);
 double calculVariance(vector<double> data, double moyenne, double nbData);
 double calculEcartType(double variance);
+double calculCorrelation(vector<double> data1, vector<double> data2, double nbData);
 
 #endif
