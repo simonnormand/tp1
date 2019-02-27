@@ -23,6 +23,7 @@ TEST(correlation_tests, validnumber) {
 
 TEST(correlation_tests, invalidnumber) {
     
+    vector<double> dummyData;
     
     dummyData.push_back(DBL_MAX*2);
     
