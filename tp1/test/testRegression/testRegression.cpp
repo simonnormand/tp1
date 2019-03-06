@@ -11,14 +11,12 @@ TEST(regression_tests, validnumber) {
     dummyData.push_back(-DBL_MAX);
     double temp = calculRegressionB1(dummyData,dummyData,1);
     
-    EXPECT_TRUE(isnan(temp));
     EXPECT_TRUE(isnan(calculRegressionB0(dummyData,dummyData,1,temp));
   
     dummyData.clear();
     dummyData.push_back(DBL_MAX);
     temp = calculRegressionB1(dummyData,dummyData,1);
     
-    EXPECT_TRUE(isnan(temp));
     EXPECT_TRUE(isnan(calculRegressionB0(dummyData,dummyData,1,temp));
     
     dummyData.clear();
@@ -31,7 +29,6 @@ TEST(regression_tests, invalidnumber) {
     dummyData.push_back(DBL_MAX*2);
     double temp = calculRegressionB1(dummyData,dummyData,1);
     
-    EXPECT_TRUE(isnan(temp));
     EXPECT_TRUE(isnan(calculRegressionB0(dummyData,dummyData,1,temp)));
     dummyData.clear();
 }
