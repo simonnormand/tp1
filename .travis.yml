@@ -27,3 +27,5 @@ script:
   - ./tp1/test/testVariance/runTests2
   - ./tp1/test/testEcartType/runTests3
   - ./tp1/test/testCorrelation/runTests4
+  - ./tp1/test/testRegression/runTests5
+  
