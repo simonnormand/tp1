@@ -66,3 +66,36 @@ double calculCorrelation(vector<double> data1, vector<double> data2, double nbDa
     
     return (denom/divis);
 }
+
+double calculRegressionB1(vector<double> data1, vector<double> data2,
+        double nbData) {
+    double moyData1 = calculMoyenne(data1, nbData);
+    double moyData2 = calculMoyenne(data2, nbData);
+    double totalData1Pow2 = 0;
+    double totalData1XData2 = 0;
+    
+    
+    for(int i = 1; i <= nbData; i++){
+        
+        totalData1Pow2 += data1[i]*data1[i];
+        
+        totalData1XData2 += data1[i]*data2[i];
+    }
+    
+    double denom = totalData1XData2 - nbData * moyData1 * moyData2;
+    
+    double divis = totalData1Pow2 - nbData * moyData1 * moyData1;
+    
+    return (denom/divis);
+}
+
+double calculRegressionB0(vector<double> data1, vector<double> data2,
+        double nbData, double regression1) {
+    double moyData1 = calculMoyenne(data1, nbData);
+    double moyData2 = calculMoyenne(data2, nbData);
+    
+    double b0 = moyData2 - regression1 * moyData1;
+    
+    
+    return b0;
+}

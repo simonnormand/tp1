@@ -12,5 +12,8 @@ double calculMoyenne(vector<double> data, double nbData);
 double calculVariance(vector<double> data, double moyenne, double nbData);
 double calculEcartType(double variance);
 double calculCorrelation(vector<double> data1, vector<double> data2, double nbData);
-
+double calculRegressionB1(vector<double> data1, vector<double> data2,
+        double nbData);
+double calculRegressionB0(vector<double> data1, vector<double> data2,
+        double nbData, double regression1);
 #endif
