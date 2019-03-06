@@ -29,6 +29,7 @@ TEST(regression_tests, invalidnumber) {
     
     vector<double> dummyData;
     dummyData.push_back(DBL_MAX*2);
+    
     double temp = calculRegressionB1(dummyData,dummyData,1)
     
     EXPECT_EQ(-DBL_MAX, temp);
